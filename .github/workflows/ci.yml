@@ -2,9 +2,9 @@ name: Workflow Pipeline
 on:
   push:
    branches:
-     - master
+     - main
   pull_request:
-    branches: ['master','dev_abinesh']
+    branches: ['main','dev_abinesh']
 
 jobs:
   build-and-test:
@@ -24,7 +24,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           
-      - name: Run unit Test and Fuctional tests
+      - name: Run unit Test and functional tests
         run: |
           pytest
           
