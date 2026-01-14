@@ -29,6 +29,6 @@ jobs:
           pytest
       - name: Run Pylint for the Quality Check
         run: |
-          pylint
+          pylint app tests
           
           
