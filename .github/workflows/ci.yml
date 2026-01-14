@@ -27,4 +27,8 @@ jobs:
       - name: Run unit Test and functional tests
         run: |
           pytest
+      - name: Run Pylint for the Quality Check
+        run: |
+          pylint
+          
           
